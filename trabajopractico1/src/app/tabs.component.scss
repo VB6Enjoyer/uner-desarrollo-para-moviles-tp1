@@ -1,0 +1,52 @@
+ion-tabs {
+  --background: #000;
+  --color: #fff;
+  background: #000;
+  color: #fff;
+  z-index: 10;
+  font-size: 32px;
+}
+
+ion-tab-bar {
+  --background: #030303;
+  --color-selected: #3880ff;
+  --color: #8c8c8c;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  font-size: 48px;
+}
+
+ion-tab-button {
+  --color: #8c8c8c;
+}
+
+ion-tab-button[aria-selected="true"] {
+  --color: #3880ff;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+ion-label {
+  font-size: 12px;
+}
+
+ion-content {
+  --background: #000000;
+  padding: 8px;
+}
+
+ion-header {
+  --background: #3880ff;
+  --color: #000000;
+}
+
+ion-toolbar {
+  --background: #3880ff;
+}
+
+ion-title {
+  font-size: 20px;
+}

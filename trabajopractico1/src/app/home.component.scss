@@ -1,0 +1,163 @@
+ion-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 16px;
+}
+
+ion-header {
+    font-size: 32px;
+    background: #000;
+
+    ion-toolbar {
+        --ion-toolbar-background-color: #3498db;
+
+        ion-title {
+            color: white;
+            background: #000;
+        }
+    }
+
+    display: flex;
+    justify-content: space-around;
+}
+
+ion-button {
+    margin: 8px;
+}
+
+ion-card {
+    margin: 16px;
+    max-width: 400px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 16px;
+    background-color: #333;
+    color: white;
+}
+
+.text {
+    background-color: #333;
+    color: white;
+}
+
+ion-alert,
+ion-loading,
+ion-toast {
+    --z-index: 2000;
+}
+
+ion-tabs {
+    position: relative;
+}
+
+ion-tab-bar {
+    z-index: 10;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+ion-list {
+    margin-bottom: 16px;
+}
+
+ion-card {
+    margin-top: 16px;
+    font-size: 1.5rem;
+}
+
+ion-loading {
+    --background: rgba(0, 0, 0, 0.5);
+    --spinner-color: #fff;
+    --spinner-size: 50px;
+}
+
+ion-toast {
+    --background: #333;
+    --color: #fff;
+    --border-radius: 8px;
+    --padding: 16px;
+    --width: 300px;
+    --text-align: center;
+    --duration: 3000ms;
+}
+
+ion-alert {
+    --background: #fff;
+    --color: #000;
+    --border-radius: 8px;
+    --width: 80%;
+    --max-width: 400px;
+    --text-align: center;
+    --padding: 16px;
+    --margin: 0 auto;
+}
+
+ion-alert .alert-button-group {
+    justify-content: center;
+}
+
+/* Media Queries for Responsive Design */
+/* For tablets and larger mobile screens */
+@media (min-width: 576px) {
+    ion-header {
+        padding: 16px;
+    }
+
+    ion-card {
+        margin: 24px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    ion-card {
+        font-size: 1.75rem;
+    }
+
+    ion-toast {
+        --width: 350px;
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 992px) {
+    ion-content {
+        padding: 24px;
+    }
+
+    ion-header {
+        padding: 24px;
+    }
+
+    ion-card {
+        margin: 32px;
+        max-width: 600px;
+        /* Adjust max-width for larger screens */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    ion-card {
+        font-size: 2rem;
+    }
+
+    ion-toast {
+        --width: 400px;
+    }
+}

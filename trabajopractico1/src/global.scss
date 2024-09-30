@@ -1,0 +1,109 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+ion-alert,
+ion-loading,
+ion-toast {
+    position: fixed;
+    /* Ensure they are fixed and appear above other content */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* Ensure this is higher than other elements */
+}
+
+.inner-scroll {
+    background-color: #333 !important;
+}
+
+.custom-toast {
+    background: rgba(0, 0, 255, 0.7);
+    color: gold;
+    padding: 16px;
+    border-radius: 8px;
+    width: 300px;
+    max-width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+}
+
+.custom-loading {
+    background: rgba(0, 0, 255, 0.7);
+    color: gold;
+    --spinner-color: gold;
+    --spinner-size: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-alert {
+    background: rgba(0, 0, 255, 0.7);
+    color: gold;
+    padding: 16px;
+    border-radius: 16px;
+    width: 80%;
+    max-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-button {
+    background: inherit;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.alert-button-inner {
+    background: gold;
+    color: blue;
+    width: 80%;
+    max-width: 400px;
+    font-size: 24px;
+}

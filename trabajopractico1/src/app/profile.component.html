@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Profile</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="profile-container">
+        <ion-avatar>
+            <img src="assets/uner.png" alt="Profile Picture">
+        </ion-avatar>
+
+        <div [hidden]="editing" class="profile-details">
+            <h2>{{ username }}</h2>
+            <p>Email: {{ email }}</p>
+            <p>Joined: {{ todayDate }}</p>
+            <ion-button (click)="editProfile()">Edit Profile</ion-button>
+        </div>
+
+        <div [hidden]="!editing" class="edit-form">
+            <ion-item>
+                <ion-label>Username</ion-label>
+                <ion-input [(ngModel)]="newUsername" placeholder="Enter new username"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Email</ion-label>
+                <ion-input [(ngModel)]="newEmail" placeholder="Enter new email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Profile Picture URL</ion-label>
+                <ion-input [(ngModel)]="newProfilePicUrl" placeholder="Enter profile picture URL"></ion-input>
+            </ion-item>
+
+            <ion-button expand="full" (click)="saveProfile()">Save</ion-button>
+            <ion-button expand="full" color="light" (click)="cancelEdit()">Cancel</ion-button>
+        </div>
+    </div>
+</ion-content>
